@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRICKSTARS - Player Performance Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏏 CRICKSTARS</h1>
+        <p>Cricket Player Performance Tracking Application</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Add Player Performance</h2>
+
+        <div class="form-box">
+            <input type="text" id="playerName" placeholder="Player Name">
+            <input type="text" id="teamName" placeholder="Team Name">
+            <input type="number" id="matches" placeholder="Matches">
+            <input type="number" id="runs" placeholder="Runs">
+            <input type="number" id="wickets" placeholder="Wickets">
+            <input type="number" id="balls" placeholder="Balls Faced">
+
+            <button onclick="addPlayer()">Add Player</button>
+        </div>
+
+        <h2>Player Performance</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Team</th>
+                    <th>Matches</th>
+                    <th>Runs</th>
+                    <th>Wickets</th>
+                    <th>Strike Rate</th>
+                    <th>Performance</th>
+                </tr>
+            </thead>
+
+            <tbody id="playerTable">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
